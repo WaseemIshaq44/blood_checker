@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    
+    <style>
+      .container {
+        max-width: 500px;
+        background-color: rgb(225, 221, 221);
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      #result {
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container mt-5">
+      <h3 class="text-center">Blood Group Type Checker</h3>
+      <div class="my-4">
+        <label for="bloodGroup">Enter Your Blood Group:</label>
+        <br />
+        <input type="text" id="bloodGroup" placeholder="e.g., A+, B-, O+" />
+      </div>
+      <button onclick="checkBloodGroup()" class="btn btn-primary btn-block">
+        Check Compatibility
+      </button>
+      <div id="result" class="mt-3"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
